@@ -33,7 +33,7 @@ public class LaunchBrowser {
 	public void loginToACtiTime() throws InterruptedException
 	{
 		
-		//suraj sawant
+		//suraj sawant1234
 		driver.findElement(By.name("username")).sendKeys("admin");
 		Thread.sleep(3000);
 		driver.findElement(By.name("pwd")).sendKeys("manager");
