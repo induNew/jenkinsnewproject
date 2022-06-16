@@ -20,6 +20,7 @@ public class LaunchBrowser {
 	@BeforeMethod
 	public void setUp()
 	{
+		
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		driver	=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -31,6 +32,8 @@ public class LaunchBrowser {
 	@Test
 	public void loginToACtiTime() throws InterruptedException
 	{
+		
+		//suraj
 		driver.findElement(By.name("username")).sendKeys("admin");
 		Thread.sleep(3000);
 		driver.findElement(By.name("pwd")).sendKeys("manager");
